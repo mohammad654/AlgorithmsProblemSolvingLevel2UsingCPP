@@ -1,33 +1,33 @@
 #include <iostream>
 #include <cmath>
-
 using namespace std;
+int readNumber(string message){
+     int number;
+       while(number<=0){
+        cout<<message<<endl;
+        cin>>number;
+        }
+    return number;
+}
 
-int readPositiveNumber(string message) {
-	int number;
-	do {
-		cout << message << endl;
-		cin >> number;
-	} while(number < 0);
-	return number;
+bool isPerfectNumber(int number){
+    int sum=0;
+    for(int i=1;i<number;i++){
+        if(number%i==0)
+            sum += i;
+    }
+return sum == number;
 }
-bool isPerfectNumber(int number) {
-	int Sum = 0;
-	for(int i = 1; i < number; i++) {
-		if(number % i == 0) Sum += i;
-	}
-	return number == Sum;
+void printPerfectNumbers(int number){
+    if(isPerfectNumber(number))
+        cout << number << " Is perfect number.\n";
+    else
+        cout << number << " Is NOT perfect number.\n";
 }
-void PrintResults(int number) {
-	if(isPerfectNumber(number)) cout << number << " Is Perfect Number.\n";
-	else cout << number << " Is NOT Perfect Number.\n";
-}
+
 int main() {
 	std::cout << "\n\n\n\n****************************************************\n\n";
-	PrintResults(readPositiveNumber("Please enter a positive number"));
+	printPerfectNumbers(readNumber("Please enter a positive number?"));
 	std::cout << "\n\n***************************************************\n\n";
 	return 0;
 }
-
-
-
