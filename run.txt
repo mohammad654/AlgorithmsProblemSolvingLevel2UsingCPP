@@ -9,3 +9,15 @@ index.exe
 //7-Algorithms & Problem Solving Level 3
 
 cd C:\C++\3-ProgrammingUsingC++Level 1>
+
+
+/*
+ 	cout<<""<<endl;
+
+    g++ index.cpp -o index.exe
+    .\index.exe
+
+match.cpp
+
+$env:PATH += ";C:\Programmeren\C++\mosh"
+*/

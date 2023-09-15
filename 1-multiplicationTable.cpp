@@ -9,16 +9,16 @@ void PrintTableHeader()
 	cout << "\n\n\t\tMultipliaction Table From 1 to 10\n\n";
 	cout <<"\t" ;
 	for (int i = 1; i <= 10; i++)
-		cout << i << "\t";
+		    cout << i << "\t";
 	cout << "\n___________________________________________________________________________________\n";
 }
 
 string ColumSperator(int i)
-{
-	if (i == 10)
-		return " |";
-	return "  |";
-}
+    {
+        if (i == 10)
+            return " |";
+        return "  |";
+    }
 void multiplicationTable()
 {
 	PrintTableHeader();

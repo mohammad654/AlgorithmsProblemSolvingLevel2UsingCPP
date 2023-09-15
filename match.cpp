@@ -240,16 +240,3 @@ void AskAndCorrectQuestionListAnswers(stQuizz& Quizz) {
            StartGame();
            return 0;
        }
-
-
-
-/*
- 	cout<<""<<endl;
-
-    g++ index.cpp -o index.exe
-    .\index.exe
-
-match.cpp
-
-$env:PATH += ";C:\Programmeren\C++\mosh"
-*/
